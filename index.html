@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Law Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="chatbot-container">
+    <div class="chatbot-header">
+      <div class="header-left">
+        <div class="avatar">
+          <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Bot Avatar">
+        </div>
+        <div class="header-title">
+          <h1>Cyber Law Assistant</h1>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="clear-chat" onclick="clearChat()" title="Clear Chat">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+        <div class="header-menu">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chat-messages" id="chatbox">
+      <!-- Messages will be added here by JavaScript -->
+    </div>
+    
+    <div class="quick-actions">
+      <button class="action-button" onclick="sendQuickMessage('Email hacking')">
+        <i class="fas fa-envelope-open"></i> Email hacking
+      </button>
+      <button class="action-button" onclick="sendQuickMessage('Online harassment')">
+        <i class="fas fa-exclamation-triangle"></i> Online harassment
+      </button>
+      <button class="action-button" onclick="sendQuickMessage('Identity theft')">
+        <i class="fas fa-user-secret"></i> Identity theft
+      </button>
+      <button class="action-button" onclick="sendQuickMessage('Data breach')">
+        <i class="fas fa-shield-alt"></i> Data breach
+      </button>
+    </div>
+    
+    <div class="input-area">
+      <div class="input-with-icon">
+        <i class="fas fa-balance-scale"></i>
+        <input type="text" id="userInput" placeholder="Describe your cyber law issue...">
+      </div>
+      <button class="voice-button" onclick="startVoiceInput()" title="Voice Input">
+        <i class="fas fa-microphone"></i>
+      </button>
+      <button class="send-button" onclick="handleInput()" title="Send Message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+    
+    <div class="disclaimer">
+      DISCLAIMER: This is for informational purposes only. Not legal advice.
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

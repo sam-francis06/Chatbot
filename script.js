@@ -28,248 +28,469 @@ const laws = [
     "severity": "medium"
   },
   {
-    "section": "65",
-    "law": "Tampering with Computer Source Documents",
-    "keywords": ["source code", "tampering", "destroy", "alter", "conceal"],
-    "description": "Knowingly or intentionally concealing, destroying, or altering computer source code required to be maintained by law.",
-    "penalty": "Imprisonment up to 3 years or fine up to ₹2 lakh or both",
-    "example": "An employee altering a telecom company's source code to bypass security protocols.",
+    "section": "66",
+    "law": "Computer-Related Offenses",
+    "keywords": ["hacking", "data theft", "malware", "fraud"],
+    "description": "Dishonestly or fraudulently performing acts under Section 43, such as hacking, data theft, or introducing malware with intent to cause damage.",
+    "penalty": "Up to 3 years imprisonment or fine up to ₹5 lakh, or both",
+    "example": "Introducing ransomware into a hospital's system to extort money.",
     "recommendations": [
-      "Restrict access to source code with role-based permissions",
-      "Maintain secure backups of critical code",
-      "Implement version control systems"
+      "Use endpoint protection software",
+      "Regularly back up critical data",
+      "Train employees on cybersecurity awareness"
     ],
     "severity": "high"
   },
   {
-    "section": "66",
-    "law": "Computer-Related Offences",
-    "keywords": ["hacking", "fraud", "malware", "damage", "disruption"],
-    "description": "Dishonestly or fraudulently committing acts such as hacking, introducing malware, or causing damage to computer systems.",
-    "penalty": "Imprisonment up to 3 years or fine up to ₹5 lakh or both",
-    "example": "Introducing ransomware to lock a company's data and demand payment.",
+    "section": "66A",
+    "law": "Sending Offensive Messages (Struck Down)",
+    "keywords": ["offensive", "social media", "communication"],
+    "description": "Sending offensive or menacing messages via communication services. (Note: Struck down by Supreme Court in 2015 as unconstitutional, but similar offenses may be prosecuted under other laws.)",
+    "penalty": "Not applicable (provision struck down)",
+    "example": "Posting defamatory content on social media (now covered under other laws like BNS).",
     "recommendations": [
-      "Use reputable antivirus and anti-malware software",
-      "Regularly update software to patch vulnerabilities",
-      "Train employees on recognizing phishing attempts"
+      "Avoid sharing harmful or false content online",
+      "Report abusive content to platform moderators",
+      "Understand platform content policies"
     ],
-    "severity": "high"
+    "severity": "not applicable"
   },
   {
     "section": "66B",
-    "law": "Receiving Stolen Computer Resources",
-    "keywords": ["stolen", "device", "computer", "fraud", "theft"],
+    "law": "Dishonestly Receiving Stolen Computer Resource",
+    "keywords": ["stolen", "data", "device", "fraud"],
     "description": "Dishonestly receiving or retaining stolen computer resources or communication devices.",
-    "penalty": "Imprisonment up to 3 years or fine up to ₹1 lakh or both",
-    "example": "Using a stolen laptop to access restricted networks or data.",
+    "penalty": "Up to 3 years imprisonment or fine up to ₹1 lakh, or both",
+    "example": "Using a stolen laptop containing proprietary software for personal gain.",
     "recommendations": [
-      "Verify the source of second-hand electronic devices",
-      "Report suspicious devices to authorities",
-      "Use device tracking software"
+      "Verify the source of second-hand devices",
+      "Use secure channels for data transfer",
+      "Report suspected stolen devices"
     ],
     "severity": "medium"
   },
   {
     "section": "66C",
     "law": "Identity Theft",
-    "keywords": ["hacked", "identity", "impersonation", "aadhar", "pan"],
-    "description": "Unauthorized use or misappropriation of another person's digital identity or authentication credentials.",
-    "penalty": "Imprisonment up to 3 years with fine up to ₹1 lakh",
-    "example": "Fraudulently using another person's Aadhaar or PAN details for financial transactions.",
+    "keywords": ["identity theft", "password", "digital signature"],
+    "description": "Fraudulently or dishonestly using another person's electronic signature, password, or other unique identification feature.",
+    "penalty": "Up to 3 years imprisonment and fine up to ₹1 lakh",
+    "example": "Using someone else's email credentials to access their bank account.",
     "recommendations": [
-      "Enable two-factor authentication on all accounts",
-      "Regularly monitor credit reports for unauthorized activity",
-      "Never share OTPs or passwords"
+      "Enable two-factor authentication",
+      "Never share login credentials",
+      "Monitor account activity regularly"
     ],
     "severity": "high"
   },
   {
     "section": "66D",
-    "law": "Cheating by Personation",
-    "keywords": ["fraud", "scam", "fake", "impersonate", "phishing"],
-    "description": "Digital impersonation through any communication device or computer resource to commit fraud.",
-    "penalty": "Imprisonment up to 3 years with fine up to ₹1 lakh",
-    "example": "Creating a fake banking website to steal user credentials.",
+    "law": "Cheating by Personation Using Computer Resource",
+    "keywords": ["phishing", "impersonation", "fraud"],
+    "description": "Cheating by pretending to be another person using a computer resource, such as phishing attacks.",
+    "penalty": "Up to 3 years imprisonment and fine up to ₹1 lakh",
+    "example": "Sending phishing emails posing as a bank to steal login details.",
     "recommendations": [
-      "Verify website authenticity before entering credentials",
-      "Check for secure HTTPS connections",
-      "Be cautious of unsolicited communications"
+      "Verify email sender authenticity",
+      "Avoid clicking suspicious links",
+      "Use email filtering tools"
     ],
     "severity": "high"
   },
   {
     "section": "66E",
     "law": "Violation of Privacy",
-    "keywords": ["privacy", "images", "non-consensual", "voyeurism", "leak"],
-    "description": "Capturing, publishing, or transmitting images of a person's private areas without their consent.",
-    "penalty": "Imprisonment up to 3 years or fine up to ₹2 lakh or both",
-    "example": "Sharing intimate images of an individual without their consent on social media.",
+    "keywords": ["privacy", "images", "explicit", "non-consensual"],
+    "description": "Intentionally capturing, publishing, or transmitting images of a person's private areas without consent.",
+    "penalty": "Up to 3 years imprisonment or fine up to ₹2 lakh, or both",
+    "example": "Sharing intimate images of an individual without their consent.",
     "recommendations": [
-      "Avoid sharing sensitive images online",
-      "Use encrypted communication channels",
-      "Report violations to cybercrime authorities immediately"
+      "Obtain explicit consent before sharing images",
+      "Secure personal devices with passwords",
+      "Report non-consensual content to authorities"
     ],
-    "severity": "critical"
+    "severity": "high"
   },
   {
     "section": "66F",
     "law": "Cyber Terrorism",
-    "keywords": ["terrorism", "national security", "threat", "disruption", "attack"],
-    "description": "Acts intended to threaten the unity, integrity, security, or sovereignty of India through computer resources.",
+    "keywords": ["cyberterrorism", "national security", "critical infrastructure"],
+    "description": "Acts intended to threaten India's unity, integrity, or security, including unauthorized access to critical infrastructure or causing widespread panic.",
     "penalty": "Imprisonment up to life",
-    "example": "Sending threat emails to critical infrastructure like stock exchanges to cause panic.",
+    "example": "Hacking into a government database to disrupt critical services.",
     "recommendations": [
-      "Report suspicious communications to CERT-In",
-      "Strengthen cybersecurity for critical infrastructure",
-      "Cooperate with law enforcement for threat intelligence"
+      "Secure critical infrastructure with robust cybersecurity",
+      "Conduct regular threat assessments",
+      "Collaborate with CERT-In for incident response"
     ],
     "severity": "critical"
   },
   {
     "section": "67",
-    "law": "Transmission of Obscene Material",
-    "keywords": ["obscene", "nude", "porn", "explicit", "leaked"],
-    "description": "Publishing or transmitting obscene material in electronic form that appeals to prurient interest or corrupts viewers.",
-    "penalty": "First conviction: Up to 3 years with fine up to ₹5 lakh\nSecond conviction: Up to 5 years with fine up to ₹10 lakh",
-    "example": "Non-consensual sharing of explicit content via messaging apps.",
+    "law": "Publishing Obscene Material",
+    "keywords": ["obscene", "explicit", "electronic"],
+    "description": "Publishing or transmitting obscene material in electronic form.",
+    "penalty": "Up to 3 years imprisonment and fine up to ₹5 lakh (first offense); up to 5 years and ₹10 lakh for subsequent offenses",
+    "example": "Sharing pornographic content on a public website.",
     "recommendations": [
-      "Report obscene content to cybercrime authorities",
-      "Preserve evidence through screenshots",
-      "Block and report malicious accounts"
+      "Adhere to platform content guidelines",
+      "Use content moderation tools",
+      "Report obscene content to authorities"
     ],
-    "severity": "critical"
+    "severity": "high"
   },
   {
     "section": "67A",
-    "law": "Transmission of Sexually Explicit Material",
-    "keywords": ["explicit", "sexual", "pornography", "transmission", "content"],
+    "law": "Publishing Sexually Explicit Material",
+    "keywords": ["explicit", "sexual", "content"],
     "description": "Publishing or transmitting material containing sexually explicit acts in electronic form.",
-    "penalty": "First conviction: Up to 5 years with fine up to ₹10 lakh\nSecond conviction: Up to 7 years with fine up to ₹10 lakh",
-    "example": "Distributing pornographic videos through social media platforms.",
+    "penalty": "Up to 5 years imprisonment and fine up to ₹10 lakh (first offense); up to 7 years and ₹10 lakh for subsequent offenses",
+    "example": "Distributing explicit videos on social media.",
     "recommendations": [
-      "Avoid sharing or accessing explicit content",
-      "Use content filtering tools",
-      "Report illegal content to authorities"
+      "Implement strict content filtering",
+      "Educate users on legal consequences",
+      "Report violations to cybercrime cells"
     ],
-    "severity": "critical"
+    "severity": "high"
   },
   {
     "section": "67B",
     "law": "Child Pornography",
-    "keywords": ["child", "pornography", "explicit", "abuse", "online"],
+    "keywords": ["child", "explicit", "abuse", "content"],
     "description": "Publishing, transmitting, or depicting children in sexually explicit acts in electronic form.",
-    "penalty": "First conviction: Up to 5 years with fine up to ₹10 lakh\nSecond conviction: Up to 7 years with fine up to ₹10 lakh",
-    "example": "Sharing images or videos depicting minors in explicit content online.",
+    "penalty": "Up to 5 years imprisonment and fine up to ₹10 lakh (first offense); up to 7 years and ₹10 lakh for subsequent offenses",
+    "example": "Sharing child sexual abuse material online.",
     "recommendations": [
-      "Report suspected content to cybercrime cells immediately",
-      "Use parental control software",
-      "Educate children about online safety"
+      "Report such content to NCPCR or cybercrime cells",
+      "Use child safety filters on platforms",
+      "Educate children on online safety"
     ],
     "severity": "critical"
   },
   {
-    "section": "69",
-    "law": "Interception or Monitoring",
-    "keywords": ["intercept", "monitor", "decrypt", "security", "government"],
-    "description": "Government-authorized interception, monitoring, or decryption of information for national security or public order.",
-    "penalty": "Imprisonment up to 7 years and fine",
-    "example": "Non-compliance by intermediaries in assisting government decryption efforts.",
+    "section": "67C",
+    "law": "Failure to Preserve Information by Intermediaries",
+    "keywords": ["intermediary", "data retention", "compliance"],
+    "description": "Intermediaries failing to preserve and retain information as prescribed by the government.",
+    "penalty": "Up to 3 years imprisonment and fine",
+    "example": "A social media platform failing to retain user data for investigation.",
     "recommendations": [
-      "Comply with government directives on data access",
-      "Implement secure data handling practices",
-      "Consult legal experts for compliance"
-    ],
-    "severity": "high"
-  },
-  {
-    "section": "72",
-    "law": "Breach of Confidentiality and Privacy",
-    "keywords": ["privacy", "data", "disclosure", "confidentiality", "breach"],
-    "description": "Unauthorized disclosure of personal information obtained in the course of official duties.",
-    "penalty": "Imprisonment up to 2 years or fine up to ₹1 lakh or both",
-    "example": "A government official leaking personal data obtained during KYC verification.",
-    "recommendations": [
-      "Implement strict access controls for sensitive data",
-      "Train employees on data confidentiality",
-      "Encrypt personal data during storage and transmission"
+      "Implement data retention policies",
+      "Comply with government directives",
+      "Maintain audit logs"
     ],
     "severity": "medium"
   },
   {
-    "section": "72A",
-    "law": "Disclosure of Personal Information",
-    "keywords": ["data", "disclosure", "privacy", "breach", "consent"],
-    "description": "Disclosing personal information without consent, causing wrongful loss or gain.",
-    "penalty": "Imprisonment up to 3 years or fine up to ₹5 lakh or both",
-    "example": "An employee sharing customer data with a third party without consent for profit.",
+    "section": "69",
+    "law": "Interception or Monitoring of Information",
+    "keywords": ["interception", "monitoring", "national security"],
+    "description": "Government-authorized interception, monitoring, or decryption of information for national security or public order.",
+    "penalty": "Up to 7 years imprisonment and fine for non-compliance",
+    "example": "A telecom company refusing to decrypt data for a national security investigation.",
     "recommendations": [
-      "Obtain explicit consent for data sharing",
-      "Implement data anonymization techniques",
-      "Conduct regular privacy training"
+      "Cooperate with authorized government agencies",
+      "Implement secure data handling protocols",
+      "Ensure compliance with legal requests"
     ],
     "severity": "high"
   },
   {
-    "section": "354C",
-    "law": "Voyeurism",
-    "keywords": ["voyeurism", "privacy", "images", "non-consensual", "women"],
-    "description": "Capturing or disseminating images of a woman engaged in a private act without her consent.",
-    "penalty": "First conviction: 1-3 years imprisonment\nSecond conviction: 2-7 years imprisonment with fine",
-    "example": "Recording a woman in a private setting and sharing the footage online.",
+    "section": "69A",
+    "law": "Blocking of Online Content",
+    "keywords": ["content blocking", "public order", "sovereignty"],
+    "description": "Government directive to block online content threatening sovereignty, security, or public order.",
+    "penalty": "Up to 7 years imprisonment and fine for non-compliance",
+    "example": "A website hosting content inciting violence being blocked.",
     "recommendations": [
-      "Respect privacy and obtain consent for recordings",
-      "Report violations to authorities promptly",
-      "Use secure devices to prevent unauthorized access"
+      "Comply with government blocking orders",
+      "Monitor content for compliance",
+      "Engage legal counsel for content disputes"
     ],
-    "severity": "critical",
-    "source": "IPC"
+    "severity": "high"
   },
   {
-    "section": "354D",
-    "law": "Cyber Stalking",
-    "keywords": ["stalking", "cyberstalking", "harassment", "monitoring", "women"],
-    "description": "Monitoring or contacting a woman online repeatedly despite her disinterest, causing harassment.",
-    "penalty": "First conviction: Up to 3 years imprisonment with fine\nSecond conviction: Up to 5 years imprisonment with fine",
-    "example": "Repeatedly sending unwanted messages or tracking a woman's online activity.",
+    "section": "69B",
+    "law": "Monitoring and Collecting Traffic Data",
+    "keywords": ["traffic data", "monitoring", "cybersecurity"],
+    "description": "Government-authorized monitoring and collection of traffic data to enhance cybersecurity.",
+    "penalty": "Up to 3 years imprisonment and fine for non-compliance",
+    "example": "An ISP failing to provide traffic data for a cybercrime investigation.",
     "recommendations": [
-      "Block and report stalkers on platforms",
-      "Limit personal information shared online",
-      "Report cyberstalking to cybercrime cells"
+      "Maintain traffic data logs",
+      "Cooperate with CERT-In",
+      "Ensure data privacy during monitoring"
     ],
-    "severity": "high",
-    "source": "IPC"
+    "severity": "medium"
   },
   {
-    "section": "379",
-    "law": "Theft of Digital Assets",
-    "keywords": ["theft", "data", "device", "stolen", "electronic"],
-    "description": "Stealing digital assets, including data or devices, through electronic means.",
-    "penalty": "Imprisonment up to 3 years or fine or both",
-    "example": "Stealing a mobile phone and accessing its data for fraudulent purposes.",
+    "section": "70",
+    "law": "Protected Systems",
+    "keywords": ["critical infrastructure", "protected system", "security"],
+    "description": "Unauthorized access to systems declared as protected by the government.",
+    "penalty": "Up to 7 years imprisonment and fine",
+    "example": "Hacking into a nuclear facility's control system.",
     "recommendations": [
-      "Use device encryption and remote wipe features",
-      "Track devices using software",
-      "Report theft to police immediately"
+      "Secure critical systems with advanced protocols",
+      "Conduct regular vulnerability assessments",
+      "Restrict access to authorized personnel"
     ],
-    "severity": "medium",
-    "source": "IPC"
+    "severity": "critical"
   },
   {
-    "section": "420",
-    "law": "Cheating and Dishonest Inducement",
-    "keywords": ["fraud", "cheating", "deception", "scam", "bogus"],
-    "description": "Cheating and dishonestly inducing delivery of property or data through electronic means.",
-    "penalty": "Imprisonment up to 7 years and fine",
-    "example": "Creating a fake website to trick users into transferring money.",
+    "section": "70B",
+    "law": "Indian Computer Emergency Response Team (CERT-In)",
+    "keywords": ["CERT-In", "cybersecurity", "incident response"],
+    "description": "Mandates CERT-In to handle cybersecurity incidents and issue guidelines.",
+    "penalty": "Up to 1 year imprisonment or fine up to ₹1 lakh for non-compliance",
+    "example": "Failing to report a cybersecurity incident to CERT-In.",
     "recommendations": [
-      "Verify the authenticity of websites and sellers",
-      "Avoid clicking on suspicious links",
-      "Report fraud to cybercrime authorities"
+      "Report incidents to CERT-In promptly",
+      "Follow CERT-In guidelines",
+      "Participate in cybersecurity drills"
     ],
-    "severity": "high",
-    "source": "IPC"
+    "severity": "medium"
+  },
+  {
+    "section": "71",
+    "law": "Misrepresentation for Digital Signature",
+    "keywords": ["digital signature", "misrepresentation", "fraud"],
+    "description": "Making false statements to obtain a digital signature certificate.",
+    "penalty": "Up to 2 years imprisonment or fine up to ₹1 lakh, or both",
+    "example": "Providing fake documents to obtain a digital signature.",
+    "recommendations": [
+      "Verify identity documents",
+      "Use trusted certification authorities",
+      "Monitor digital signature usage"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "72",
+    "law": "Breach of Confidentiality",
+    "keywords": ["confidentiality", "data breach", "privacy"],
+    "description": "Unauthorized disclosure of information obtained under the IT Act.",
+    "penalty": "Up to 2 years imprisonment or fine up to ₹1 lakh, or both",
+    "example": "A government official leaking sensitive data accessed during an investigation.",
+    "recommendations": [
+      "Implement strict access controls",
+      "Sign NDAs for sensitive roles",
+      "Conduct regular training on confidentiality"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "72A",
+    "law": "Disclosure of Information in Breach of Contract",
+    "keywords": ["data breach", "contract", "privacy"],
+    "description": "Disclosing personal information without consent in breach of a lawful contract.",
+    "penalty": "Up to 3 years imprisonment or fine up to ₹5 lakh, or both",
+    "example": "A service provider sharing client data with a third party without permission.",
+    "recommendations": [
+      "Include data protection clauses in contracts",
+      "Use encrypted communication channels",
+      "Audit third-party data access"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "73",
+    "law": "Publishing False Digital Signature Certificates",
+    "keywords": ["digital signature", "false certificate", "fraud"],
+    "description": "Publishing or making available a digital signature certificate known to be false.",
+    "penalty": "Up to 2 years imprisonment or fine up to ₹1 lakh, or both",
+    "example": "Issuing a fake digital signature certificate to mislead users.",
+    "recommendations": [
+      "Verify certificate authenticity",
+      "Use trusted certifying authorities",
+      "Report suspicious certificates"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "74",
+    "law": "Creating Fraudulent Digital Signatures",
+    "keywords": ["digital signature", "fraud", "forgery"],
+    "description": "Creating or publishing digital signature certificates for fraudulent or unlawful purposes.",
+    "penalty": "Up to 2 years imprisonment or fine up to ₹1 lakh, or both",
+    "example": "Forging a digital signature to authenticate a fake document.",
+    "recommendations": [
+      "Secure digital signature keys",
+      "Monitor certificate issuance",
+      "Use secure authentication protocols"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "75",
+    "law": "Offenses Outside India",
+    "keywords": ["extraterritorial", "cybercrime", "jurisdiction"],
+    "description": "Applies IT Act to offenses committed outside India targeting computers or networks in India.",
+    "penalty": "As per relevant section of the IT Act",
+    "example": "A hacker in another country targeting an Indian bank’s servers.",
+    "recommendations": [
+      "Implement cross-border cybersecurity measures",
+      "Collaborate with international law enforcement",
+      "Secure international data transfers"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "DPDPA 5",
+    "law": "Data Processing with Consent",
+    "keywords": ["data protection", "consent", "privacy"],
+    "description": "Data fiduciaries must obtain explicit consent from data principals for processing personal data.",
+    "penalty": "Fine up to ₹250 crore",
+    "example": "A company collecting user data without clear consent.",
+    "recommendations": [
+      "Implement clear consent mechanisms",
+      "Provide opt-out options",
+      "Maintain consent records"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "DPDPA 6",
+    "law": "Purpose Limitation for Data Processing",
+    "keywords": ["data purpose", "privacy", "compliance"],
+    "description": "Personal data must be processed only for the purpose for which it was collected.",
+    "penalty": "Fine up to ₹200 crore",
+    "example": "Using customer data for marketing without specifying this purpose.",
+    "recommendations": [
+      "Clearly state data usage purposes",
+      "Limit data use to agreed purposes",
+      "Audit data processing activities"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "DPDPA 8",
+    "law": "Data Principal Rights",
+    "keywords": ["data rights", "access", "erasure"],
+    "description": "Data principals have the right to access, correct, or erase their personal data.",
+    "penalty": "Fine up to ₹150 crore",
+    "example": "Denying a user’s request to delete their personal data.",
+    "recommendations": [
+      "Provide user-friendly data access portals",
+      "Implement data correction mechanisms",
+      "Ensure timely response to data requests"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "DPDPA 9",
+    "law": "Data Breach Notification",
+    "keywords": ["data breach", "notification", "compliance"],
+    "description": "Data fiduciaries must notify the Data Protection Board and affected individuals of data breaches.",
+    "penalty": "Fine up to ₹250 crore",
+    "example": "Failing to report a data breach exposing customer data.",
+    "recommendations": [
+      "Develop incident response plans",
+      "Notify authorities promptly",
+      "Inform affected users transparently"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "DPDPA 10",
+    "law": "Cross-Border Data Transfer",
+    "keywords": ["data transfer", "international", "privacy"],
+    "description": "Personal data can be transferred outside India except to restricted countries notified by the government.",
+    "penalty": "Fine up to ₹200 crore",
+    "example": "Transferring user data to a restricted country without approval.",
+    "recommendations": [
+      "Verify compliance with data transfer rules",
+      "Use secure data transfer protocols",
+      "Monitor restricted country lists"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "BNS 317",
+    "law": "Cheating",
+    "keywords": ["cheating", "fraud", "deception"],
+    "description": "Dishonestly inducing someone to deliver property or alter valuable security, applicable to cyber frauds.",
+    "penalty": "Up to 7 years imprisonment and fine",
+    "example": "Tricking someone into transferring money via a fake website.",
+    "recommendations": [
+      "Verify website authenticity",
+      "Avoid sharing financial details online",
+      "Report suspicious activities"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "BNS 318",
+    "law": "Cheating by Personation",
+    "keywords": ["impersonation", "fraud", "identity"],
+    "description": "Pretending to be another person to deceive and cheat, applicable to online impersonation.",
+    "penalty": "Up to 3 years imprisonment or fine, or both",
+    "example": "Impersonating a CEO in an email to authorize a fraudulent payment.",
+    "recommendations": [
+      "Use email verification tools",
+      "Train employees on phishing detection",
+      "Report impersonation to authorities"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "BNS 355",
+    "law": "Criminal Defamation",
+    "keywords": ["defamation", "reputation", "online"],
+    "description": "Publishing content to harm someone’s reputation, applicable to online defamation.",
+    "penalty": "Up to 2 years imprisonment or fine, or both",
+    "example": "Posting false defamatory statements on social media.",
+    "recommendations": [
+      "Verify information before posting",
+      "Avoid harmful content",
+      "Seek legal advice for disputes"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "BNS 349",
+    "law": "Criminal Intimidation",
+    "keywords": ["threat", "intimidation", "online"],
+    "description": "Threatening someone with injury to their person, reputation, or property, applicable to cyber threats.",
+    "penalty": "Up to 2 years imprisonment or fine, or both",
+    "example": "Sending threatening emails to extort money.",
+    "recommendations": [
+      "Report threats to cybercrime cells",
+      "Block suspicious contacts",
+      "Use secure communication platforms"
+    ],
+    "severity": "high"
+  },
+  {
+    "section": "SPDI Rules 3",
+    "law": "Sensitive Personal Data Definition",
+    "keywords": ["sensitive data", "privacy", "compliance"],
+    "description": "Defines sensitive personal data, including passwords, financial information, and health data.",
+    "penalty": "Compensation under Section 43A",
+    "example": "A company collecting health data without proper safeguards.",
+    "recommendations": [
+      "Classify data as sensitive",
+      "Implement encryption",
+      "Comply with SPDI Rules"
+    ],
+    "severity": "medium"
+  },
+  {
+    "section": "SPDI Rules 5",
+    "law": "Data Collection Consent",
+    "keywords": ["consent", "data collection", "privacy"],
+    "description": "Requires explicit consent for collecting sensitive personal data.",
+    "penalty": "Compensation under Section 43A",
+    "example": "Collecting financial data without user consent.",
+    "recommendations": [
+      "Use clear consent forms",
+      "Allow opt-out options",
+      "Document consent"
+    ],
+    "severity": "medium"
   }
 ];
+  
 
 // Add welcome message when the page loads
 window.onload = () => {
